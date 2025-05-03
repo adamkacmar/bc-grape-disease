@@ -1,4 +1,8 @@
 dataset/
+dataset_bg_removed/
+augmented-dataset/
+background_images/
+final-models/
 env/
 hp-models-base/
 hp-models-tiny/
