@@ -1,0 +1,11 @@
+gradio==5.29.0
+numpy
+matplotlib
+tqdm
+opencv-python
+rembg
+torch
+torchvision
+scikit-learn
+transformers
+wandb
