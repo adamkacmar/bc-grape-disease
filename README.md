@@ -14,6 +14,12 @@ To install requirements, run the following command:
 pip install -r requirements.txt
 ```
 
+🚀 Usage
+
+```setup
+pip tbd
+```
+
 ## 🧠 Pre-trained Models
 
 You can download all of pretrained models here:
