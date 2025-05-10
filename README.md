@@ -14,7 +14,7 @@ To install requirements, run the following command:
 pip install -r requirements.txt
 ```
 
-🚀 Usage
+## 🚀 Usage
 
 ```setup
 pip tbd
