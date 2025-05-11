@@ -1,4 +1,4 @@
-# Grape Disease Detection Using Computer Vision
+# 🍇 Grape Disease Detection Using Computer Vision
 
 This repository is the official implementation of bachelor's thesis:
 
@@ -6,9 +6,7 @@ Author: **Adam Kačmár**<br />
 Year of Submission: **2025**<br />
 Faculty of Informatics and Information Technologies STU in Bratislava
 
->📋  Optional: include a graphic explaining your approach/main result, bibtex entry, link to demos, blog posts and tutorials
-
-## Requirements
+## 🧰 Requirements
 
 To install requirements, run the following command:
 
@@ -16,29 +14,57 @@ To install requirements, run the following command:
 pip install -r requirements.txt
 ```
 
->📋  Describe how to set up the environment, e.g. pip/conda/docker commands, download datasets, etc...
+## 🚀 Usage
 
-## Pre-trained Models
+```setup
+pip tbd
+```
 
-You can download pretrained models here:
+## 🧠 Pre-trained Models
 
-- [My awesome model](https://drive.google.com/mymodel.pth) trained on ImageNet using parameters x,y,z. 
+You can download all of pretrained models here:
 
->📋  Give a link to where/how the pretrained models can be downloaded and how they were trained (if applicable).  Alternatively you can have an additional column in your results table with a link to the models.
+- [All models](https://drive.google.com/drive/folders/1bkEkagiUx0bZNSwiMkbKZYmIFzydIP7A?usp=sharing) trained on the [PlantVillage dataset](https://www.kaggle.com/datasets/abdallahalidev/plantvillage-dataset) and our [augmented dataset](https://www.kaggle.com/datasets/adamkacmar/augmented-grape-leaf-disease-dataset) using every possible combinations of hyperparameter configuration of batch sizes 16, 32 and learning rates 0.00001, 0.0001, 0.0005.  
 
-## Results
+## 📊 Results
 
-Our model achieves the following performance on :
+### Evaluation of Models Trained on [our dataset](https://www.kaggle.com/datasets/adamkacmar/augmented-grape-leaf-disease-dataset)
 
-### [Image Classification on ImageNet](https://paperswithcode.com/sota/image-classification-on-imagenet)
+| Model   | Batch Size | Learning Rate | Accuracy - Augmented | Accuracy - Original |
+|---------|------------|----------------|-----------------------|----------------------|
+| ViT     | 16         | 1e-5           | *99.25%*              | 97.95%               |
+|         | 16         | 1e-4           | 99.22%                | *99.61%*             |
+|         | 16         | 5e-4           | 94.52%                | 97.23%               |
+|         | 32         | 1e-5           | **99.28%**            | 97.45%               |
+|         | 32         | 1e-4           | 98.89%                | **99.72%**           |
+|         | 32         | 5e-4           | 96.68%                | 97.73%               |
+| SwinV2  | 16         | 1e-5           | **99.86%**            | 99.11%               |
+|         | 16         | 1e-4           | 99.42%                | 98.56%               |
+|         | 16         | 5e-4           | 72.83%                | 42.77%               |
+|         | 32         | 1e-5           | *99.78%*              | **99.94%**           |
+|         | 32         | 1e-4           | 99.36%                | *99.78%*             |
+|         | 32         | 5e-4           | 97.12%                | 80.50%               |
 
-| Model name         | Top 1 Accuracy  | Top 5 Accuracy |
-| ------------------ |---------------- | -------------- |
-| My awesome model   |     85%         |      95%       |
 
->📋  Include a table of results from your paper, and link back to the leaderboard for clarity and context. If your main result is a figure, include that figure and link to the command or notebook to reproduce it. 
+### Evaluation of Models Trained on [PlantVillage Dataset](https://www.kaggle.com/datasets/abdallahalidev/plantvillage-dataset)
+
+| Model   | Batch Size | Learning Rate | Accuracy - Original | Accuracy - Augmented |
+|---------|------------|----------------|----------------------|-----------------------|
+| ViT     | 16         | 1e-5           | 99.89%               | 72.30%                |
+|         | 16         | 1e-4           | **100.00%**          | 62.27%                |
+|         | 16         | 5e-4           | 99.11%               | 34.02%                |
+|         | 32         | 1e-5           | *99.94%*             | *81.30%*              |
+|         | 32         | 1e-4           | *99.94%*             | **87.09%**            |
+|         | 32         | 5e-4           | 99.83%               | 36.18%                |
+| SwinV2  | 16         | 1e-5           | ***100.00%***        | 74.18%                |
+|         | 16         | 1e-4           | 99.94%               | **86.43%**            |
+|         | 16         | 5e-4           | 98.67%               | 43.60%                |
+|         | 32         | 1e-5           | ***100.00%***        | 63.91%                |
+|         | 32         | 1e-4           | 99.94%               | *86.32%*              |
+|         | 32         | 5e-4           | 99.39%               | 46.04%                |
 
 
 ## Contributing
 
->📋  Pick a licence and describe how to contribute to your code repository. 
+[PlantVillage](https://www.kaggle.com/datasets/abdallahalidev/plantvillage-dataset)  
+[Grapevine Disease Dataset (Original)](https://www.kaggle.com/datasets/rm1000/grape-disease-dataset-original)
