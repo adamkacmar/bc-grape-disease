@@ -9,3 +9,4 @@ torchvision
 scikit-learn
 transformers
 wandb
+datasets
