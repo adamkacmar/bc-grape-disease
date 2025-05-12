@@ -40,7 +40,7 @@ For better explainability of the models, run the Grad-CAM notebooks followingly:
 jupyter notebook model-scripts/vit_gradcam.ipynb
 jupyter notebook model-scripts/swinv2_gradcam.ipynb
 ```
-*requires having models locally.
+*require having models locally.
 
 ### Testing Notebook*
 To test the models overall performance on both datasets, run this:
@@ -49,7 +49,7 @@ To test the models overall performance on both datasets, run this:
 jupyter notebook model-scripts/test_models.ipynb
 ```
 
-*requires having models locally.
+*require having models locally.
 
 ### Dataset Set-up Notebooks*
 To recreate your own dataset, run these:
@@ -59,7 +59,7 @@ jupyter notebook dataset-scripts/opencv_image.ipynb
 jupyter notebook dataset-scripts/remove_images_backgrounds.ipynb
 ```
 
-*requires having models locally.
+*require having models locally.
 
 ## 🧱 Project Structure
 
