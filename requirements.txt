@@ -10,3 +10,4 @@ scikit-learn
 transformers
 wandb
 datasets
+notebook
