@@ -6,9 +6,16 @@ Author: **Adam Kačmár**<br />
 Year of Submission: **2025**<br />
 Faculty of Informatics and Information Technologies STU in Bratislava
 
-## 🧰 Requirements
+## 🧰 Installation
 
-To install requirements, run the following command:
+1. Clone repository
+
+```setup
+git clone https://github.com/adamkacmar/bc-grape-disease
+cd bc-grape-disease
+```
+
+2. Install requirements
 
 ```setup
 pip install -r requirements.txt
@@ -16,8 +23,60 @@ pip install -r requirements.txt
 
 ## 🚀 Usage
 
+### Training Notebooks
+If you wish to train your own models on our augmented dataset run these:
+
 ```setup
-pip tbd
+jupyter notebook model-scripts/vit_hyperparams.ipynb
+jupyter notebook model-scripts/swinv2_hyperparams.ipynb
+```
+
+### Grad-CAM Notebooks*
+For better explainability of the models, run the Grad-CAM notebooks followingly:
+```setup
+jupyter notebook model-scripts/vit_gradcam.ipynb
+jupyter notebook model-scripts/swinv2_gradcam.ipynb
+```
+*requires having models locally.
+
+### Testing Notebook*
+To test the models overall performance on both datasets, run this:
+
+```setup
+jupyter notebook model-scripts/test_models.ipynb
+```
+
+*requires having models locally.
+
+### Dataset Set-up Notebooks*
+To recreate your own dataset, run these:
+
+```setup
+jupyter notebook dataset-scripts/opencv_image.ipynb
+jupyter notebook dataset-scripts/remove_images_backgrounds.ipynb
+```
+
+*requires having models locally.
+
+## 🧱 Project Structure
+
+```
+bc-grape-disease/              
+├── dataset-scripts/           # Directory of notebooks related to dataset creation
+│   ├── opencv_image.ipynb     # Generates new dataset with augmented backgrounds
+│   └── remove_images_backgrounds.ipynb  # Removes the backgrounds of the original dataset
+│
+├── model-scripts/       # Directory of notebooks related to model training and evaluation
+│   ├── swinv2_hyperparams.ipynb   # Training, validation and testing for Swin Transformer V2
+│   ├── vit_hyperparams.ipynb      # Training, validation and testing for Vision Transformer
+│   ├── swinv2_gradcam.ipynb       # Grad-CAM implementation for Swin Transformer V2
+│   ├── vit_gradcam.ipynb          # Grad-CAM implementation for Vision Transformer
+│   └── test_models.ipynb          # Tests models from local directory
+│
+├── .gitignore             # Files ignored by Git
+├── gradioapp.py           # Demo (TBD)
+├── requirements.txt       # List of required packages/libraries
+└── README.md              # Project description
 ```
 
 ## 🧠 Pre-trained Models
