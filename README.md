@@ -6,7 +6,10 @@ Author: **Adam Kačmár**<br />
 Year of Submission: **2025**<br />
 Faculty of Informatics and Information Technologies STU in Bratislava
 
-## 🧰 Installation
+## 🧰 Requirements
+- Python 3.10+
+
+## 🔧 Installation
 
 1. Clone repository
 
@@ -37,7 +40,7 @@ For better explainability of the models, run the Grad-CAM notebooks followingly:
 jupyter notebook model-scripts/vit_gradcam.ipynb
 jupyter notebook model-scripts/swinv2_gradcam.ipynb
 ```
-*requires having models locally.
+*require having models locally.
 
 ### Testing Notebook*
 To test the models overall performance on both datasets, run this:
@@ -46,7 +49,7 @@ To test the models overall performance on both datasets, run this:
 jupyter notebook model-scripts/test_models.ipynb
 ```
 
-*requires having models locally.
+*require having models locally.
 
 ### Dataset Set-up Notebooks*
 To recreate your own dataset, run these:
@@ -56,7 +59,7 @@ jupyter notebook dataset-scripts/opencv_image.ipynb
 jupyter notebook dataset-scripts/remove_images_backgrounds.ipynb
 ```
 
-*requires having models locally.
+*require having models locally.
 
 ## 🧱 Project Structure
 
@@ -123,7 +126,7 @@ You can download all of pretrained models here:
 |         | 32         | 5e-4           | 99.39%               | 46.04%                |
 
 
-## Contributing
+## 👷 Contributing
 
 [PlantVillage](https://www.kaggle.com/datasets/abdallahalidev/plantvillage-dataset)  
 [Grapevine Disease Dataset (Original)](https://www.kaggle.com/datasets/rm1000/grape-disease-dataset-original)
