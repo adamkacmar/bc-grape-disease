@@ -6,7 +6,10 @@ Author: **Adam Kačmár**<br />
 Year of Submission: **2025**<br />
 Faculty of Informatics and Information Technologies STU in Bratislava
 
-## 🧰 Installation
+## 🧰 Requirements
+- Python 3.10+
+
+## 🔧 Installation
 
 1. Clone repository
 
