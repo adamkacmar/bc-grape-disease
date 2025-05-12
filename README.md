@@ -126,7 +126,7 @@ You can download all of pretrained models here:
 |         | 32         | 5e-4           | 99.39%               | 46.04%                |
 
 
-## Contributing
+## 👷 Contributing
 
 [PlantVillage](https://www.kaggle.com/datasets/abdallahalidev/plantvillage-dataset)  
 [Grapevine Disease Dataset (Original)](https://www.kaggle.com/datasets/rm1000/grape-disease-dataset-original)
